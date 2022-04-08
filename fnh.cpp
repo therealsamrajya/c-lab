@@ -12,5 +12,6 @@ main()
 	cout<<"data written in file";
 	ifstream fin("Text.txt");
 	fin>>ch>>i>>f>>str;
+	cout<<ch<<endl<<i<<endl<<f<<endl<<str;
 
 }
