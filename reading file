@@ -1,0 +1,25 @@
+#include<iostream>
+#include<fstream>
+using namespace std;
+main()
+{
+	char ch='d';
+	int i=69;
+	float f=6.14;
+	ofstream fout("Text.txt");
+	fout<<ch<<" "<<i<<" "<<f<<" ";
+	cout<<"data written in file";
+}
+
+#include<iostream>
+#include<fstream>
+using namespace std;
+main()
+{
+	ifstream fin("Text.txt");
+	int i;
+	float f;
+	char ch;
+	fin>>ch>>i>>f;
+	cout<<ch<<endl<<i<<endl<<f<<endl;
+}
